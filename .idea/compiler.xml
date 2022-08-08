@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ConnectionPool" />
+        <module name="Hibernate" />
+        <module name="StoredProcedure" />
+        <module name="SpringBoot-DBConnection" />
+        <module name="Traditional" />
+        <module name="JDBC" />
+        <module name="Hibernate-Transitional-Annotation" />
+        <module name="JPA" />
+        <module name="H2" />
+        <module name="JDBCBuilder" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="h2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConnectionPool" options="-parameters" />
+      <module name="H2" options="-parameters" />
+      <module name="Hibernate" options="-parameters" />
+      <module name="Hibernate-Transitional-Annotation" options="-parameters" />
+      <module name="JDBC" options="-parameters" />
+      <module name="JDBCBuilder" options="-parameters" />
+      <module name="JPA" options="-parameters" />
+      <module name="SpringBoot-DBConnection" options="" />
+      <module name="StoredProcedure" options="-parameters" />
+      <module name="Traditional" options="-parameters" />
+      <module name="h2" options="-parameters" />
+    </option>
+  </component>
+</project>
