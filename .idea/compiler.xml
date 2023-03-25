@@ -8,21 +8,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ConnectionPool" />
+        <module name="Hibernate-Traditional-Annotation-Oracle" />
         <module name="Hibernate" />
-        <module name="StoredProcedure" />
-        <module name="Traditional-Oracle" />
         <module name="SpringBoot-DBConnection" />
-        <module name="Traditional" />
-        <module name="JDBC" />
-        <module name="Hibernate-Transitional-Annotation" />
-        <module name="JPA" />
         <module name="H2" />
         <module name="InMemoryDB-H2" />
         <module name="JDBCBuilder" />
+        <module name="StoredProcedure" />
+        <module name="Hibernate-Traditional-Annotation" />
+        <module name="Traditional-Oracle" />
+        <module name="Traditional" />
+        <module name="JDBC" />
+        <module name="JPA" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="h2" target="1.8" />
+      <module name="Hibernate-Tranditional-Annotation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,7 +32,9 @@
       <module name="ConnectionPool" options="-parameters" />
       <module name="H2" options="-parameters" />
       <module name="Hibernate" options="-parameters" />
-      <module name="Hibernate-Transitional-Annotation" options="-parameters" />
+      <module name="Hibernate-Traditional-Annotation" options="-parameters" />
+      <module name="Hibernate-Traditional-Annotation-Oracle" options="-parameters" />
+      <module name="Hibernate-Tranditional-Annotation" options="-parameters" />
       <module name="InMemoryDB-H2" options="-parameters" />
       <module name="JDBC" options="-parameters" />
       <module name="JDBCBuilder" options="-parameters" />

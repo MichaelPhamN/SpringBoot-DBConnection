@@ -19,6 +19,8 @@
         <option value="$PROJECT_DIR$/h2/pom.xml" />
         <option value="$PROJECT_DIR$/InMemoryDB-H2/pom.xml" />
         <option value="$PROJECT_DIR$/Traditional-Oracle/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate-Traditional-Annotation-Oracle/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate-Traditional-Annotation/pom.xml" />
       </list>
     </option>
   </component>

@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.2</version>
+        <version>2.7.10</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>Hibernate-Transitional-Annotation</artifactId>
+    <artifactId>Hibernate-Traditional-Annotation-Oracle</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Hibernate-Transitional-Annotation</name>
-    <description>Hibernate-Transitional-Annotation</description>
+    <name>Hibernate-Traditional-Annotation-Oracle</name>
+    <description>Hibernate-Traditional-Annotation-Oracle</description>
     <properties>
         <java.version>1.8</java.version>
         <hibernate.core>5.3.14.Final</hibernate.core>
@@ -20,12 +20,16 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>

@@ -1,4 +1,4 @@
-package com.example.hibernatetransitionalannotation.confg;
+package com.example.hibernatetraditionalannotationoracle.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -40,7 +40,7 @@ public class DBConfig {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan(
-                "com.example.hibernatetransitionalannotation.model");
+                "com.example.hibernatetraditionalannotationoracle.model");
         sessionFactory.setHibernateProperties(hibernateProperties());
 
         return sessionFactory;
