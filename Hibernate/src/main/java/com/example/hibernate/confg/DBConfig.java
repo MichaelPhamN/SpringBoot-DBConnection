@@ -17,22 +17,22 @@ import java.util.Properties;
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
 public class DBConfig {
-    @Value("${database.hibernate.url}")
+    @Value("${spring.datasource.url}")
     private String url;
 
-    @Value("${database.hibernate.driver}")
+    @Value("${spring.datasource.driverClassName}")
     private String driver;
 
-    @Value("${database.hibernate.username}")
+    @Value("${spring.datasource.username}")
     private String username;
 
-    @Value("${database.hibernate.password}")
+    @Value("${spring.datasource.password}")
     private String password;
 
-    @Value("${database.hibernate.dialect}")
+    @Value("${spring.datasource.database-platform}")
     private String dialect;
 
-    @Value("${database.hibernate.showsql}")
+    @Value("${spring.datasource.showSql}")
     private String showsql;
 
     @Bean

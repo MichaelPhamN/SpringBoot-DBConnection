@@ -10,12 +10,14 @@
         <module name="ConnectionPool" />
         <module name="Hibernate" />
         <module name="StoredProcedure" />
+        <module name="Traditional-Oracle" />
         <module name="SpringBoot-DBConnection" />
         <module name="Traditional" />
         <module name="JDBC" />
         <module name="Hibernate-Transitional-Annotation" />
         <module name="JPA" />
         <module name="H2" />
+        <module name="InMemoryDB-H2" />
         <module name="JDBCBuilder" />
       </profile>
     </annotationProcessing>
@@ -29,12 +31,14 @@
       <module name="H2" options="-parameters" />
       <module name="Hibernate" options="-parameters" />
       <module name="Hibernate-Transitional-Annotation" options="-parameters" />
+      <module name="InMemoryDB-H2" options="-parameters" />
       <module name="JDBC" options="-parameters" />
       <module name="JDBCBuilder" options="-parameters" />
       <module name="JPA" options="-parameters" />
       <module name="SpringBoot-DBConnection" options="" />
       <module name="StoredProcedure" options="-parameters" />
       <module name="Traditional" options="-parameters" />
+      <module name="Traditional-Oracle" options="-parameters" />
       <module name="h2" options="-parameters" />
     </option>
   </component>

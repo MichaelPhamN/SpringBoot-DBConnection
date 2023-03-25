@@ -11,7 +11,6 @@ import org.springframework.test.context.jdbc.Sql;
 import java.util.List;
 
 @JdbcTest
-
 public class AccountDaoImplIntegrationTest {
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
@@ -21,7 +20,7 @@ public class AccountDaoImplIntegrationTest {
     @Sql(scripts = {"/scripts/cleanup.sql"}, executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
     void whenInjectInMemoryDataSource_thenReturnCorrectEmployeeCount() {
         AccountDaoImpl accountDao = new AccountDaoImpl();
-        accountDao.setDBConnection(namedParameterJdbcTemplate);
+//        accountDao.setDBConnection(namedParameterJdbcTemplate);
 
         List<Account> accounts = accountDao.findAccounts();
     }

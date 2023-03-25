@@ -17,7 +17,7 @@ class DBPoolConfigTest {
     @Test
     public void whenCalledgetConnection_thenCorrect() throws SQLException {
         DBPoolConfig dbPoolConfig = DBPoolConfig
-                .create("jdbc:mysql://localhost:3306/springboot_ioc?serverTimezone=UTC", "root", "123456");
+                .create("jdbc:mysql://localhost:3306/spring_db", "root", "123456");
 
         List<Account> accounts = new ArrayList<>();
         String sql = "SELECT acc.id, acc.email, acc.password FROM Account as acc";

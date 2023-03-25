@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.SQLException;
 import java.util.List;
 
 @RestController
@@ -30,18 +31,18 @@ public class AccountController {
     }
 
     @DeleteMapping("/{id}")
-    public int deleteAccount(@PathVariable int id) {
+    public int deleteAccount(@PathVariable int id) throws SQLException {
         return accountService.deleteAccount(id);
     }
 
     @PostMapping("")
-    public int addAccount(@RequestBody Account account) {
+    public int addAccount(@RequestBody Account account) throws SQLException {
         int executedRow = accountService.addAccount(account);
         return executedRow;
     }
 
     @PutMapping("")
-    public int editAccount(@RequestBody Account account) {
+    public int editAccount(@RequestBody Account account) throws SQLException {
         int executedRow = accountService.editAccount(account);
         return executedRow;
     }
