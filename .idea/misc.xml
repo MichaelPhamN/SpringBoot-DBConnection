@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/Traditional-Oracle/pom.xml" />
         <option value="$PROJECT_DIR$/Hibernate-Traditional-Annotation-Oracle/pom.xml" />
         <option value="$PROJECT_DIR$/Hibernate-Traditional-Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/JPA-Oracle/pom.xml" />
       </list>
     </option>
   </component>

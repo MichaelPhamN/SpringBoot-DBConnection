@@ -17,6 +17,7 @@
         <module name="StoredProcedure" />
         <module name="Hibernate-Traditional-Annotation" />
         <module name="Traditional-Oracle" />
+        <module name="JPA-Oracle" />
         <module name="Traditional" />
         <module name="JDBC" />
         <module name="JPA" />
@@ -39,6 +40,7 @@
       <module name="JDBC" options="-parameters" />
       <module name="JDBCBuilder" options="-parameters" />
       <module name="JPA" options="-parameters" />
+      <module name="JPA-Oracle" options="-parameters" />
       <module name="SpringBoot-DBConnection" options="" />
       <module name="StoredProcedure" options="-parameters" />
       <module name="Traditional" options="-parameters" />
